@@ -11,7 +11,35 @@
 		63B50B702B5DCFD500B0B606 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B50B6F2B5DCFD500B0B606 /* ContentView.swift */; };
 		63B50B722B5DCFD700B0B606 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B50B712B5DCFD700B0B606 /* Assets.xcassets */; };
 		63B50B752B5DCFD700B0B606 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B50B742B5DCFD700B0B606 /* Preview Assets.xcassets */; };
+		63B50B822B5DD09300B0B606 /* ScreenTimeDemoReportExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B50B812B5DD09300B0B606 /* ScreenTimeDemoReportExtension.swift */; };
+		63B50B842B5DD09300B0B606 /* TotalActivityReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B50B832B5DD09300B0B606 /* TotalActivityReport.swift */; };
+		63B50B862B5DD09300B0B606 /* TotalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B50B852B5DD09300B0B606 /* TotalActivityView.swift */; };
+		63B50B8B2B5DD09300B0B606 /* ScreenTimeDemoReportExtension.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 63B50B7F2B5DD09300B0B606 /* ScreenTimeDemoReportExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63B50B892B5DD09300B0B606 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63B50B622B5DCFD500B0B606 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63B50B7E2B5DD09300B0B606;
+			remoteInfo = ScreenTimeDemoReportExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		63B50B8F2B5DD09300B0B606 /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				63B50B8B2B5DD09300B0B606 /* ScreenTimeDemoReportExtension.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		63B50B6A2B5DCFD500B0B606 /* ScreenTimeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenTimeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +47,23 @@
 		63B50B6F2B5DCFD500B0B606 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		63B50B712B5DCFD700B0B606 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63B50B742B5DCFD700B0B606 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		63B50B7F2B5DD09300B0B606 /* ScreenTimeDemoReportExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = ScreenTimeDemoReportExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		63B50B812B5DD09300B0B606 /* ScreenTimeDemoReportExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeDemoReportExtension.swift; sourceTree = "<group>"; };
+		63B50B832B5DD09300B0B606 /* TotalActivityReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalActivityReport.swift; sourceTree = "<group>"; };
+		63B50B852B5DD09300B0B606 /* TotalActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalActivityView.swift; sourceTree = "<group>"; };
+		63B50B872B5DD09300B0B606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63B50B882B5DD09300B0B606 /* ScreenTimeDemoReportExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenTimeDemoReportExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		63B50B672B5DCFD500B0B606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63B50B7C2B5DD09300B0B606 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				63B50B6C2B5DCFD500B0B606 /* ScreenTimeDemo */,
+				63B50B802B5DD09300B0B606 /* ScreenTimeDemoReportExtension */,
 				63B50B6B2B5DCFD500B0B606 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				63B50B6A2B5DCFD500B0B606 /* ScreenTimeDemo.app */,
+				63B50B7F2B5DD09300B0B606 /* ScreenTimeDemoReportExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +110,18 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		63B50B802B5DD09300B0B606 /* ScreenTimeDemoReportExtension */ = {
+			isa = PBXGroup;
+			children = (
+				63B50B812B5DD09300B0B606 /* ScreenTimeDemoReportExtension.swift */,
+				63B50B832B5DD09300B0B606 /* TotalActivityReport.swift */,
+				63B50B852B5DD09300B0B606 /* TotalActivityView.swift */,
+				63B50B872B5DD09300B0B606 /* Info.plist */,
+				63B50B882B5DD09300B0B606 /* ScreenTimeDemoReportExtension.entitlements */,
+			);
+			path = ScreenTimeDemoReportExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +132,34 @@
 				63B50B662B5DCFD500B0B606 /* Sources */,
 				63B50B672B5DCFD500B0B606 /* Frameworks */,
 				63B50B682B5DCFD500B0B606 /* Resources */,
+				63B50B8F2B5DD09300B0B606 /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				63B50B8A2B5DD09300B0B606 /* PBXTargetDependency */,
 			);
 			name = ScreenTimeDemo;
 			productName = ScreenTimeDemo;
 			productReference = 63B50B6A2B5DCFD500B0B606 /* ScreenTimeDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		63B50B7E2B5DD09300B0B606 /* ScreenTimeDemoReportExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63B50B8C2B5DD09300B0B606 /* Build configuration list for PBXNativeTarget "ScreenTimeDemoReportExtension" */;
+			buildPhases = (
+				63B50B7B2B5DD09300B0B606 /* Sources */,
+				63B50B7C2B5DD09300B0B606 /* Frameworks */,
+				63B50B7D2B5DD09300B0B606 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenTimeDemoReportExtension;
+			productName = ScreenTimeDemoReportExtension;
+			productReference = 63B50B7F2B5DD09300B0B606 /* ScreenTimeDemoReportExtension.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +172,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					63B50B692B5DCFD500B0B606 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					63B50B7E2B5DD09300B0B606 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -116,6 +193,7 @@
 			projectRoot = "";
 			targets = (
 				63B50B692B5DCFD500B0B606 /* ScreenTimeDemo */,
+				63B50B7E2B5DD09300B0B606 /* ScreenTimeDemoReportExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +205,13 @@
 			files = (
 				63B50B752B5DCFD700B0B606 /* Preview Assets.xcassets in Resources */,
 				63B50B722B5DCFD700B0B606 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63B50B7D2B5DD09300B0B606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +227,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63B50B7B2B5DD09300B0B606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63B50B862B5DD09300B0B606 /* TotalActivityView.swift in Sources */,
+				63B50B822B5DD09300B0B606 /* ScreenTimeDemoReportExtension.swift in Sources */,
+				63B50B842B5DD09300B0B606 /* TotalActivityReport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63B50B8A2B5DD09300B0B606 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63B50B7E2B5DD09300B0B606 /* ScreenTimeDemoReportExtension */;
+			targetProxy = 63B50B892B5DD09300B0B606 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		63B50B762B5DCFD700B0B606 /* Debug */ = {
@@ -267,12 +370,13 @@
 		63B50B792B5DCFD700B0B606 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScreenTimeDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = B9A8AWJDVH;
+				DEVELOPMENT_TEAM = 7UGH9UC5AP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -296,12 +400,13 @@
 		63B50B7A2B5DCFD700B0B606 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ScreenTimeDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = B9A8AWJDVH;
+				DEVELOPMENT_TEAM = 7UGH9UC5AP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -316,6 +421,58 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.clearjar.ScreenTimeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63B50B8D2B5DD09300B0B606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenTimeDemoReportExtension/ScreenTimeDemoReportExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UGH9UC5AP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenTimeDemoReportExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenTimeDemoReportExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clearjar.ScreenTimeDemo.ScreenTimeDemoReportExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63B50B8E2B5DD09300B0B606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenTimeDemoReportExtension/ScreenTimeDemoReportExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7UGH9UC5AP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScreenTimeDemoReportExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScreenTimeDemoReportExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.clearjar.ScreenTimeDemo.ScreenTimeDemoReportExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,6 +496,15 @@
 			buildConfigurations = (
 				63B50B792B5DCFD700B0B606 /* Debug */,
 				63B50B7A2B5DCFD700B0B606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63B50B8C2B5DD09300B0B606 /* Build configuration list for PBXNativeTarget "ScreenTimeDemoReportExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63B50B8D2B5DD09300B0B606 /* Debug */,
+				63B50B8E2B5DD09300B0B606 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
